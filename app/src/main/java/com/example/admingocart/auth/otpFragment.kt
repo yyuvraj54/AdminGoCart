@@ -12,7 +12,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.admingocart.Activity.AdminMainActivity
-import com.example.admingocart.Models.Users
 import com.example.admingocart.R
 import com.example.admingocart.Utils
 import com.example.admingocart.databinding.FragmentOtpBinding
