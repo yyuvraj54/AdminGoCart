@@ -33,142 +33,206 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusTopStart="16dp"
+                    android:layout_weight="1"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/etproduct"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:drawablePadding="10dp"
+                        android:hint="Product Title" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etquantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Quantuty (5kg,2ltr)"
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginEnd="2.6dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etProductUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:hint="Unit (kg/Ltr)"
+                    android:minHeight="48dp"
+                    android:paddingHorizontal="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    android:layout_marginEnd="2.6dp"
+                    android:layout_weight="0.5"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etstock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="No. of Stock"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    android:layout_marginEnd="2.6dp"
+                    android:layout_weight="0.5"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Price(in rupees)"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginEnd="2.6dp"
+                android:layout_weight="0.5"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp">
+
+                <AutoCompleteTextView
+                android:id="@+id/etProductCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/baseline_interests_24"
+                android:drawablePadding="10dp"
+                android:hint="Product Category"
+                android:minHeight="48dp"
+                android:padding="5dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginEnd="2.6dp"
+                android:layout_weight="0.5"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp">
+            <AutoCompleteTextView
+                android:id="@+id/etProductType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/baseline_interests_24"
+                android:hint="Product Type"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:minHeight="48dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/etproduct"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:padding="5dp"
-                        android:layout_margin="5dp"
-                        android:hint="Product Title"
-                        android:background="@drawable/custom_input"
-                        android:inputType="text"
-                        android:minHeight="48dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/autoCompleteTextView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:ems="10"
-                            android:padding="5dp"
-                            android:background="@drawable/custom_input"
-                            android:hint="Unit"
-                            tools:ignore="TouchTargetSizeCheck" />
-
-                        <EditText
-                            android:id="@+id/editTextText3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:padding="5dp"
-                            android:layout_margin="5dp"
-                            android:background="@drawable/custom_input"
-                            android:ems="10"
-                            android:hint="Quantuty (5kg,2ltr)"
-                            android:inputType="text"
-                            tools:ignore="TouchTargetSizeCheck" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <EditText
-                            android:id="@+id/etstock"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/custom_input"
-                            android:layout_margin="5dp"
-                            android:ems="10"
-                            android:padding="5dp"
-                            android:hint="no. of Stock"
-                            android:inputType="text"
-                            tools:ignore="TouchTargetSizeCheck" />
-
-                        <EditText
-                            android:id="@+id/etprice"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:ems="10"
-                            android:background="@drawable/custom_input"
-                            android:padding="5dp"
-                            android:layout_margin="5dp"
-                            android:hint="Price(in rupees)"
-                            android:inputType="text"
-                            tools:ignore="TouchTargetSizeCheck" />
-                    </LinearLayout>
-
-                    <AutoCompleteTextView
-                        android:id="@+id/autoCompleteTextView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/baseline_interests_24"
-                        android:drawablePadding="10dp"
-                        android:layout_margin="5dp"
-                        android:padding="5dp"
-                        android:background="@drawable/custom_input"
-                        android:hint="Product Category"
-                        android:minHeight="48dp" />
-
-                    <AutoCompleteTextView
-                        android:id="@+id/autoCompleteTextView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/baseline_interests_24"
-                        android:drawablePadding="10dp"
-                        android:layout_margin="5dp"
-                        android:background="@drawable/custom_input"
-                        android:padding="5dp"
-                        android:hint="Product Type"
-                        android:minHeight="48dp" />
-
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="45sp"
                     android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/rbsb"
                     android:gravity="center"
                     android:text="Select some images"
                     android:textColor="@color/blue" />
 
+                    <ImageButton
+                        android:id="@+id/selectImage"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baseline_insert_photo_24"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProductImages"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -177,7 +241,7 @@
                     android:layout_height="120dp" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/addbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
