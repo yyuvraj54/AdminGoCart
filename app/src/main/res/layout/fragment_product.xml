@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProductFragment">
+    tools:context=".Fragments.ProductFragment">
 
     <Toolbar
         android:layout_width="match_parent"
@@ -50,12 +50,12 @@
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
                         android:id="@+id/etproduct"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
                         android:drawablePadding="10dp"
-                        android:hint="Product Title" />
+                        android:hint="Product Title"
+                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -162,15 +162,15 @@
                 app:boxCornerRadiusTopStart="16dp">
 
                 <AutoCompleteTextView
-                android:id="@+id/etProductCategory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:drawableLeft="@drawable/baseline_interests_24"
-                android:drawablePadding="10dp"
-                android:hint="Product Category"
-                android:minHeight="48dp"
-                android:padding="5dp" />
+                    android:id="@+id/etProductCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/baseline_interests_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Product Category"
+                    android:minHeight="48dp"
+                    android:padding="5dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
