@@ -10,6 +10,7 @@ import com.example.admingocart.databinding.ItemViewProductCategoriesBinding
 class CategoriesAdapter(
     private val categoryArrayList: ArrayList<Categories>,
     val onCategoryClicked: (Categories) -> Unit,
+
 ):RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>(){
 
     class CategoriesViewHolder(val binding: ItemViewProductCategoriesBinding):RecyclerView.ViewHolder(binding.root)

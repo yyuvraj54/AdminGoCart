@@ -32,7 +32,7 @@ private  lateinit var binding:FragmentHomeBinding
     }
 
     private fun getAllProducts(category: String) {
-
+        binding.shimmerViewContainer.visibility = View.VISIBLE
         lifecycleScope.launch {
             viewModel.fetchAllTheProduct(category).collect{
 
@@ -47,7 +47,7 @@ private  lateinit var binding:FragmentHomeBinding
                     val adapterProduct = AdapterProduct()
                     binding.rvProduct.adapter = adapterProduct
                     adapterProduct.differ.submitList(it)
-
+                    binding.shimmerViewContainer.visibility = View.GONE
             }
         }
 
